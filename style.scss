@@ -5,3 +5,22 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#111, #000);
+}
+h2{
+  position: relative;
+  font-size: 10em;
+  text-transform: uppercase;
+  color:#fff;
+  background: linear-gradient(to bottom,#222 0%,#222 50%,#222 50%,#111 100%);
+-webkit-background-clip: text;
+&:before{
+  content: attr(data-text);
+  position: absolute;
+}
+}
