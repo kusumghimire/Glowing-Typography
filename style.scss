@@ -12,15 +12,19 @@ body {
   min-height: 100vh;
   background: radial-gradient(#111, #000);
 }
-h2{
+h2 {
   position: relative;
   font-size: 10em;
   text-transform: uppercase;
-  color:#fff;
-  background: linear-gradient(to bottom,#222 0%,#222 50%,#222 50%,#111 100%);
--webkit-background-clip: text;
-&:before{
-  content: attr(data-text);
-  position: absolute;
-}
+  color: #fff;
+  background: linear-gradient(to bottom, #222 0%, #222 50%, #222 50%, #111 100%);
+  -webkit-background-clip: text;
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff0, #0f0, #f00, #0f0);
+  }
 }

@@ -32,5 +32,9 @@ h2 {
 h2:before {
   content: attr(data-text);
   position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+  background: linear-gradient(45deg, #ff0, #0f0, #f00, #0f0);
 }
 /*# sourceMappingURL=style.css.map */
