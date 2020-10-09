@@ -26,5 +26,17 @@ h2 {
     left: 4px;
     z-index: -1;
     background: linear-gradient(45deg, #ff0, #0f0, #f00, #0f0);
+    -webkit-background-clip: text;
+  color: transparent;
+  }
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff0, #0f0, #f00, #0f0);
+    -webkit-background-clip: text;
+  color: transparent;
   }
 }
